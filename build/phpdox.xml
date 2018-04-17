@@ -3,10 +3,10 @@
     <project name="Pearch-API" source="${basedir}/.." workdir="${basedir}/phpdox">
 
         <collector publiconly="false">
-            <!--<include mask="${phpDox.project.source}/models/*.php" />-->
+            <include mask="${phpDox.project.source}/models/*.php" />
             <include mask="${phpDox.project.source}/modules/*.php" />
             <include mask="${phpDox.project.source}/components/*.php" />
-            <!--<include mask="${phpDox.project.source}/controllers/*.php" />-->
+            <include mask="${phpDox.project.source}/controllers/*.php" />
             <include mask="${phpDox.project.source}/vendor/yiisoft/yii2/*.php" />
         </collector>
 
