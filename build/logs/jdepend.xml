@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="+global">
+      <Stats>
+        <TotalClasses>9</TotalClasses>
+        <ConcreteClasses>9</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>3</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/_support/AcceptanceTester.php">AcceptanceTester</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/_support/FunctionalTester.php">FunctionalTester</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/_support/UnitTester.php">UnitTester</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/acceptance/AboutCest.php">AboutCest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/acceptance/ContactCest.php">ContactCest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/acceptance/HomeCest.php">HomeCest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/acceptance/LoginCest.php">LoginCest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/functional/ContactFormCest.php">ContactFormCest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/functional/LoginFormCest.php">LoginFormCest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Codeception</Package>
+        <Package>yii\helpers</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="app\components">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>8</Ce>
+        <A>0</A>
+        <I>0.88888888888889</I>
+        <D>0.11111111111111</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/FeedPush.php">FeedPush</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/SelfNotAllowedValidator.php">SelfNotAllowedValidator</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/ThriftTrend.php">ThriftTrend</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Pusher</Package>
+        <Package>Thrift\ClassLoader</Package>
+        <Package>Thrift\Protocol</Package>
+        <Package>Thrift\Transport</Package>
+        <Package>trends\TrendsServer</Package>
+        <Package>yii\base</Package>
+        <Package>yii\validators</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>app\modules\v1\models</Package>
+      </UsedBy>
+    </Package>
+    <Package name="app\components\rabbitmq">
+      <Stats>
+        <TotalClasses>9</TotalClasses>
+        <ConcreteClasses>9</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>4</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/CommentPostFeed.php">CommentPostFeed</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/ForgetPasswordEmail.php">ForgetPasswordEmail</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/KeywordSearch.php">KeywordSearch</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/LikePostFeed.php">LikePostFeed</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/SendKeywordFeed.php">SendKeywordFeed</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/SendPassionFeed.php">SendPassionFeed</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/SendPostFeed.php">SendPostFeed</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/SendRegisterEmail.php">SendRegisterEmail</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/components/rabbitmq/SendRegisterFeed.php">SendRegisterFeed</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>PhpAmqpLib\Message</Package>
+        <Package>mikemadisonweb\rabbitmq\components</Package>
+        <Package>yii\db</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="app\modules\v1">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>2</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/Module.php">Module</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>yii\base</Package>
+        <Package>yii\filters</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="app\modules\v1\controllers">
+      <Stats>
+        <TotalClasses>8</TotalClasses>
+        <ConcreteClasses>8</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>8</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/AuthController.php">AuthController</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/CommentController.php">CommentController</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/FeedController.php">FeedController</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/KeywordController.php">KeywordController</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/PassionController.php">PassionController</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/PostController.php">PostController</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/ProfileController.php">ProfileController</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/controllers/UserController.php">UserController</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>app\modules\v1\models</Package>
+        <Package>yii\data</Package>
+        <Package>yii\db</Package>
+        <Package>yii\filters\auth</Package>
+        <Package>yii\helpers</Package>
+        <Package>yii\rest</Package>
+        <Package>yii\web</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="app\modules\v1\models">
+      <Stats>
+        <TotalClasses>36</TotalClasses>
+        <ConcreteClasses>36</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>8</Ce>
+        <A>0</A>
+        <I>0.88888888888889</I>
+        <D>0.11111111111111</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ActivateAccountForm.php">ActivateAccountForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ChangeEmailForm.php">ChangeEmailForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ChangeMobileForm.php">ChangeMobileForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ChangePasswordForm.php">ChangePasswordForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ChangeUsernameForm.php">ChangeUsernameForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/CommentLike.php">CommentLike</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ElasticKeywordSearch.php">ElasticKeywordSearch</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/Feed.php">Feed</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/Keyword.php">Keyword</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/KeywordImageForm.php">KeywordImageForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/KeywordPin.php">KeywordPin</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/KeywordSearch.php">KeywordSearch</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/Login.php">Login</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/LoginForm.php">LoginForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/PassionProfileLike.php">PassionProfileLike</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/PasswordRecoveryForm.php">PasswordRecoveryForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/PostAttachment.php">PostAttachment</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/PostKeyword.php">PostKeyword</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/PostLike.php">PostLike</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ProfileImageForm.php">ProfileImageForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/RecoverPasswordForm.php">RecoverPasswordForm</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ReportComment.php">ReportComment</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ReportKeyword.php">ReportKeyword</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ReportPost.php">ReportPost</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/ReportUser.php">ReportUser</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/User.php">User</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserKeyword.php">UserKeyword</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserKeywordDigest.php">UserKeywordDigest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserKeywordRating.php">UserKeywordRating</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserPassionProfile.php">UserPassionProfile</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserPin.php">UserPin</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserPost.php">UserPost</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserPostComment.php">UserPostComment</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserPostPin.php">UserPostPin</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/modules/v1/models/UserPostSearch.php">UserPostSearch</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>app\components</Package>
+        <Package>codeonyii\yii2validators</Package>
+        <Package>yii\base</Package>
+        <Package>yii\db</Package>
+        <Package>yii\elasticsearch</Package>
+        <Package>yii\helpers</Package>
+        <Package>yii\web</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>app\modules\v1\controllers</Package>
+      </UsedBy>
+    </Package>
+    <Package name="tests\models">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>3</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/unit/models/ContactFormTest.php">ContactFormTest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/unit/models/LoginFormTest.php">LoginFormTest</Class>
+        <Class sourceFile="/var/lib/jenkins/workspace/Pearch-API/tests/unit/models/UserTest.php">UserTest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Codeception\Test</Package>
+        <Package>app\models</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+  </Packages>
+  <Cycles/>
+</PDepend>
