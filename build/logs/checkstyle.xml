@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="2.9.1">
-<file name="/var/lib/jenkins/workspace/Pearch-API/components/ThriftTrend.php">
- <error line="21" column="42" severity="error" message="Whitespace is expected before any concat operator &quot;.&quot;" source="Yii2.Files.SpacesAroundConcat.NoSpace"/>
- <error line="21" column="42" severity="error" message="Whitespace is expected after any concat operator &quot;.&quot;" source="Yii2.Files.SpacesAroundConcat.NoSpace"/>
-</file>
-</checkstyle>
-

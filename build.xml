@@ -66,14 +66,6 @@
                 <include name="**/*.php" />
                 <modified />
             </fileset>
-            <fileset dir="${basedir}/modules">
-                <include name="**/*.php" />
-                <modified />
-            </fileset>
-            <fileset dir="${basedir}/components">
-                <include name="**/*.php" />
-                <modified />
-            </fileset>
             <fileset dir="${basedir}/controllers">
                 <include name="**/*.php" />
                 <modified />
@@ -91,8 +83,6 @@
             <arg value="--count-tests" />
             <arg path="${basedir}/models" />
             <arg path="${basedir}/controllers" />
-            <arg path="${basedir}/modules" />
-            <arg path="${basedir}/components" />
             <arg path="${basedir}/tests" />
         </exec>
     </target>
@@ -108,8 +98,6 @@
             <arg path="${basedir}/build/logs/phploc.xml" />
             <arg path="${basedir}/models" />
             <arg path="${basedir}/controllers" />
-            <arg path="${basedir}/modules" />
-            <arg path="${basedir}/components" />
             <arg path="${basedir}/tests" />
         </exec>
     </target>
@@ -121,14 +109,14 @@
             <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
             <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
             <arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
-            <arg path="${basedir}/models,${basedir}/controllers,${basedir}/modules,${basedir}/components,${basedir}/tests" />
+            <arg path="${basedir}/models,${basedir}/controllers,${basedir}/tests" />
         </exec>
     </target>
 
     <target name="phpmd"
             description="Perform project mess detection using PHPMD and print human readable output. Intended for usage on the command line before committing.">
         <exec executable="${toolsdir}phpmd">
-            <arg path="${basedir}/models,${basedir}/controllers,${basedir}/modules,${basedir}/components" />
+            <arg path="${basedir}/models,${basedir}/controllers" />
             <arg value="text" />
             <arg path="${basedir}/build/phpmd.xml" />
         </exec>
@@ -138,7 +126,7 @@
             depends="prepare"
             description="Perform project mess detection using PHPMD and log result in XML format. Intended for usage within a continuous integration environment.">
         <exec executable="${toolsdir}phpmd">
-            <arg path="${basedir}/models,${basedir}/controllers,${basedir}/modules,${basedir}/components" />
+            <arg path="${basedir}/models,${basedir}/controllers" />
             <arg value="xml" />
             <arg path="${basedir}/build/phpmd.xml" />
             <arg value="--reportfile" />
@@ -154,8 +142,6 @@
             <arg value="--ignore=autoload.php" />
             <arg path="${basedir}/models" />
             <arg path="${basedir}/controllers" />
-            <arg path="${basedir}/modules" />
-            <arg path="${basedir}/components" />
             <arg path="${basedir}/tests" />
         </exec>
     </target>
@@ -171,8 +157,6 @@
             <arg value="--ignore=autoload.php" />
             <arg path="${basedir}/models" />
             <arg path="${basedir}/controllers" />
-            <arg path="${basedir}/modules" />
-            <arg path="${basedir}/components" />
         </exec>
     </target>
 
@@ -181,8 +165,6 @@
         <exec executable="${toolsdir}phpcpd">
             <arg path="${basedir}/models" />
             <arg path="${basedir}/controllers" />
-            <arg path="${basedir}/modules" />
-            <arg path="${basedir}/components" />
         </exec>
     </target>
 
@@ -194,8 +176,6 @@
             <arg path="${basedir}/build/logs/pmd-cpd.xml" />
             <arg path="${basedir}/models" />
             <arg path="${basedir}/controllers" />
-            <arg path="${basedir}/modules" />
-            <arg path="${basedir}/components" />
         </exec>
     </target>
 
