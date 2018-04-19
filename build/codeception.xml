@@ -2,7 +2,7 @@
 <project name="codeception" basedir=".">
 
     <property name="tests.basedir" value="${basedir}/tests"/>
-    <property name="codeception.basedir" value="${tests.basedir}/codeception"/>
+    <property name="codeception.basedir" value="${tests.basedir}"/>
     <property name="codeception.script" value="${basedir}/vendor/bin/codecept"/>
     <property name="codeception.suites.default" value="" />
     <property name="codeception.options.default" value="--xml --coverage --coverage-xml --coverage-html --coverage-crap4j" />
