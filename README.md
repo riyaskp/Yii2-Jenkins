@@ -20,9 +20,11 @@ In configuration change these values
 
 Build 
     Invoke Ant
-	Targets : build-parallel	
+	Targets : build-parallel
+
     Report Crap
 	XML Crap Report filename pattern : tests/_output/crap4j.xml
+
     PHPUnit-3.x (default)
  	PHPUnit-3.x (default) Pattern : tests/_output/report.xml
 	
