@@ -3,7 +3,7 @@
     <br>
 </p>
 
-Yii2 Jenkins is Yii2 Basic Project Template skeleton [Yii 2](http://www.yiiframework.com/) application with jenkins test configured.
+Yii2 Jenkins is Yii2 Basic Project Template skeleton [Yii 2](http://www.yiiframework.com/) application with jenkins build configured.
 
 Configuration
 ------------
