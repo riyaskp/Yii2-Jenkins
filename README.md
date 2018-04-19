@@ -16,9 +16,8 @@ http://jenkins-php.org/integration.html
 
 Create your new buid job using this template.
 
-In configuration change these values
+In configuration change these build settings
 
-Build 
     Invoke Ant
 	Targets : build-parallel
 
